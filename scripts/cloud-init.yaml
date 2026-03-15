@@ -11,6 +11,7 @@ packages:
   - docker-compose
 
 runcmd:
+  - [hostnamectl, set-hostname, cloud-lab]
   - [systemctl, enable, docker]
   - [systemctl, start, docker]
   - [usermod, -aG, docker, ubuntu]

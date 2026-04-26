@@ -9,6 +9,9 @@ packages:
   - golang
   - docker.io
   - docker-compose
+  - lxc
+  - lxctl
+  - lxc-templates
 
 runcmd:
   - [hostnamectl, set-hostname, cloud-lab]

@@ -1,6 +1,6 @@
-# Docker cloud
+# Cloud Lab
 
-Данный код создает виртуальную машину c внешним ip в облаке Yandex Cloud. _В дальнейшем должна быть добавлена предустановка docker и golang._ 
+Данный код создает виртуальную машину c внешним ip в облаке Yandex Cloud.
 
 
 ## Файл `terraform.tfvars`

@@ -18,3 +18,13 @@ variable "def_ssh_public_key" {
   type = string
   default = "~/.ssh/yc.pub"
 }
+
+variable "def_numbers_of_cores" {
+  type = number
+  default = 2
+}
+
+variable "def_ram_size" {
+  type = number
+  default = 4
+}

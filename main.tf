@@ -29,8 +29,8 @@ resource "yandex_compute_instance" "docker_host" {
   zone                      = "ru-central1-a"
 
   resources {
-    cores = "2"
-    memory = "4"
+    cores =   var.def_numbers_of_cores  # 2
+    memory =  var.def_ram_size          # 4
   }
 
   boot_disk {

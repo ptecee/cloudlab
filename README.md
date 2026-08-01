@@ -25,6 +25,22 @@ terrafrom apply
 terraform destroy
 ```
 
+## Ресурсы
+По дефолту задано `cpu = 2` `ram = 4`. Определены в `terraform.tfvars`.  
+Переопределить можно через переменные во время выоплнения `terraform apply`. 
+
+```shell
+# Передать конкретные переменные
+terraform apply \
+-var="def_numbers_of_cores=8" \
+-var="def_ram_size=16"
+
+# Передать файл с переменными
+terraform apply \
+-var-file="dev.tfvars"
+```
+
+
 ## Проблемы которые могут возникнуть
 
 При возникновении ошибки в `/var/log/cloud-init-output.log`:
